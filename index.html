@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Math'n'path</title>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </head>
+  <body id="body" onmouseup="clicked = false; inObj = false;">
+
+  <link rel="stylesheet" href="style.css">
+    <div class = 'header'>Math'n'path</div>
+    <div class = 'picker' onclick="scrollToCanvas()">
+      Розпочати
+     </div>
+
+  <div class='main'>
+     <canvas title='Тут відображається система координат' onmousedown="clicked = true;" onmouseup="clicked = false; inObj = false;"  style="display: block;" id="coords">penis</canvas>
+     <img id= 'ruler' src="img/rulerfalse.png" data-phase='false' title='Натисніть, щоб переключити підрахунок довжини створюваної прямої' width="120px" height="120px" class = 'ruler' onclick = 'changeRuler()'>
+     <div id="description" title= 'Тут відображаються створені прямі та їх властивості' class = 'description'>
+      <h1>Натискайте <span class = 'key'>ENTER</span>, щоб створювати точки для побудови прямих</h1> 
+
+
+      </div>
+  </div>
+
+    <div class = 'header'></div>
+  </body>
+  <script type="text/javascript" src="script.js">
+
+  </script>
+
+</html>
